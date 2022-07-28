@@ -1,0 +1,1 @@
+{"name":"Local: balanced_paranthesis","url":"c:\\Users\\saksh\\Desktop\\C++ project\\STL c++\\","tests":[{"id":1636263366052,"input":"[[{}]]","output":"yes"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\saksh\\Desktop\\C++ project\\STL c++\\","group":"local","local":true}

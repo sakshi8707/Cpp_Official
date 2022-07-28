@@ -1,0 +1,1 @@
+{"name":"Local: balanced_brackets","url":"c:\\Users\\saksh\\Desktop\\C++ project\\STL c++\\balanced_brackets.cpp","tests":[{"id":1636796768554,"input":"{()}[]","output":"Balanced brackets"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\saksh\\Desktop\\C++ project\\STL c++\\balanced_brackets.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: insertion_sort","url":"c:\\Users\\saksh\\Desktop\\C++ project\\insertion_sort.cpp","tests":[{"id":1638002846316,"input":"5\n3 5 4 9 8","output":"3 4 5 8 9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\saksh\\Desktop\\C++ project\\insertion_sort.cpp","group":"local","local":true}

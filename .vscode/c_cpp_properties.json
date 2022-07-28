@@ -1,0 +1,35 @@
+{
+  "configurations": [
+    {
+      "name": "windows-gcc-x86",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+<<<<<<< HEAD
+      "compilerPath": "C:/MinGW/bin/gcc.exe",
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+=======
+      "defines": [
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "compilerPath": "C:/MinGW/bin/gcc.exe",
+      "cStandard": "${default}",
+>>>>>>> hello_world
+      "intelliSenseMode": "windows-gcc-x86",
+      "compilerArgs": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic"
+<<<<<<< HEAD
+      ]
+=======
+      ],
+      "cppStandard": "${default}"
+>>>>>>> hello_world
+    }
+  ],
+  "version": 4
+}
