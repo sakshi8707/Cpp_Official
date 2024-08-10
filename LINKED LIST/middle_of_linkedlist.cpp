@@ -12,7 +12,7 @@ class node {
   }  
 };
 // function for inserting element at last of the node 
-void InsertAtTail(node* &head ,int  val)
+void InsertAtTail(node* &head ,int val)
 {
     node* n = new node( val);
     if(head == NULL)
@@ -74,6 +74,7 @@ node *MiddleOfLinkedList(node* head)
 int main()
 {
 node* head = NULL;
+    //sample test case
 InsertAtTail(head,1);
 InsertAtTail(head,2);
 InsertAtTail(head,3);
