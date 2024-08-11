@@ -64,6 +64,66 @@ public:
  * bool param_3 = obj->contains(key);
  */
 
+class MyHashSet {
+public:
+   vector<list<int>> mp;
+   int size;
+
+    MyHashSet() {
+        size = 100;
+        mp.resize(size);
+    }
+
+    int index(int key)
+    {
+        return key%size;
+    }
+
+    list<int> :: iterator search(int key)
+    {
+        int i = index(key);
+        return find(mp[i].begin(),mp[i].end(),key);
+    }
+
+    
+    void add(int key) {
+        if(contains(key))
+        {
+            return;
+        }
+        int i = index(key);
+        mp[i].push_back(key);
+    }
+    
+    void remove(int key) {
+        if(!contains(key))
+        {
+            return;
+        }
+        int i = index(key);
+        mp[i].erase(search(key)); 
+    }
+    
+    bool contains(int key) {
+        int i = index(key);
+        if(search(key)!=mp[i].end())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+};
+
+/**
+ * Your MyHashSet object will be instantiated and called as such:
+ * MyHashSet* obj = new MyHashSet();
+ * obj->add(key);
+ * obj->remove(key);
+ * bool param_3 = obj->contains(key);
+ */
 
  void print(node* head)
     {
