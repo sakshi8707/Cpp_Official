@@ -28,6 +28,9 @@ temp = temp->next;
     temp->next = n;
 
 }
+// --------------**Brute approch** SC(O(n/k))-----------------------------------------------------
+
+
 
 void Reverse(node *s,node *e)
 {
@@ -63,6 +66,41 @@ node *ReverseKGrouop(node* head,int k)
   Reverse(s,e);
   s->next = newHead;   
   return e;   
+}
+
+
+// --------------**BETTER approch** SC(O(1))-----------------------------------------------------
+
+node *ReverseKGrouop(node* head,int k)
+{
+  if(head==NULL || head->next==NULL || k==1)
+  {
+      return head;
+  }
+  node* dummy = new node(-1);
+    dummy->next = head;
+    node* beforeStart = dummy; 
+    node* e = head;
+    int i=0;
+    while(e!=NULL)
+        {
+            i++;
+            if(i%k==0)
+            {
+                node* s=beforeStart->next;
+                node* temp = e->next;
+                reverse(s,e);   
+                beforeStart->next = e;
+                s->next = temp;
+                beforeStart = s;
+                e= temp;
+            }
+            else
+            {
+                e=e->next;
+            }
+        }
+    return dummy->next;
 }
 
 void Display(node *head)
