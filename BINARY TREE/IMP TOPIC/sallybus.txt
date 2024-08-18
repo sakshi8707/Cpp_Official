@@ -1,0 +1,20 @@
+// all flow of learings and problems
+
+tree implemention
+preorder , postorder , inorder traversal (iterative)
+preorder , postorder , inorder traversal (recursive)
+level order traverssal
+bfs , dfs traversal on tree
+maximum depth of binary tree
+check for balanced 
+diameter of binary tree
+maximum path sum in binary tree
+check that two trees are identical or not
+zig-zag / spiral order  traversal
+boundary traversal of binary tree
+vertical order 
+top view of binary tree
+bottom / left / right view of binary tree
+check for symetrical binary tree
+
+
