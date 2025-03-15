@@ -14,6 +14,61 @@
 //**more better aprroch in java**
  // this.data = data1;
 
+
+
+public class MergeTwoSortedList{
+    public static Node mergeTowList(List<Node> list1 , List<Node> list2){
+        
+        Node l1 = list1;
+        Node l2 = list2;
+
+        if(l1!=null)
+        return l2;
+        if(l2!=null)
+        return l1;
+
+
+     Node temp;
+     Node ans = new Node(2);
+     Node temp = ans;
+
+        //instead of below onw we can write above one
+        // if(l1.data < l2.data)
+        // {
+        //     ans = l1;
+        //     temp = l1;
+        //     l1 = l1.next;
+        // }
+        // else
+        // {
+        //     ans = l2;
+        //     temp = l2;
+        //     l2 = l2.next;
+        // }
+ 
+       
+       while(l1!=null && l2!=null)
+       {
+        if(l1.data <= l2.data)
+        {
+            temp.next = l1;
+            temp = l1;
+            l1 = l1.next;
+        }
+        else
+        {
+            temp.next = l2;
+            temp = l2;
+            l2 = l2.next;
+        }
+       }
+       if(l1==null) return temp.next = l2;
+       else return temp.next = l1;
+       return ans.next;
+    }
+}
+
+
 // TIME COMPLEXITY----->O(N)
 // SPACE COMPLEXITY------>O(1) space
 /*
