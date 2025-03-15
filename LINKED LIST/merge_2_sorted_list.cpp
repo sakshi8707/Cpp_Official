@@ -9,6 +9,11 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+
+//**more better aprroch in java**
+ // this.data = data1;
+
 // TIME COMPLEXITY----->O(N)
 // SPACE COMPLEXITY------>O(1) space
 /*
