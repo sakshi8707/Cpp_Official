@@ -85,19 +85,19 @@ node *ReverseKGrouop(node* head,int k)
     while(e!=NULL)
         {
             i++;
-            if(i%k==0)
+            if(i%k==0)   //i reached till k nodes ex. k=3 , i=3 it meaans 3/3=0 (now i have to perform reversal)
             {
                 node* s=beforeStart->next;
                 node* temp = e->next;
                 reverse(s,e);   
                 beforeStart->next = e;
-                s->next = temp;
+                s->next = temp;      //now connecting reversed nodes head() with end's next (temp)
                 beforeStart = s;
                 e= temp;
             }
             else
             {
-                e=e->next;
+                e=e->next;  //i never reached till end 
             }
         }
     return dummy->next;
